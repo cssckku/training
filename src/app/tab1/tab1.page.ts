@@ -15,6 +15,7 @@ export class Tab1Page {
   tel = '';
   constructor() {
 
+    
   }
   add_item(tel) {
     this.students.push({ name: this.show_text(), tel: tel, id: 5 });
