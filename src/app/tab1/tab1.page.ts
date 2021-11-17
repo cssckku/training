@@ -7,6 +7,26 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  students = [
+    { name: 'pravit', tel: '08454845', id: 1 },
+    { name: "prayod", tel: '084848455', id: 2 }
+  ];
+  name = '';
+  tel = '';
+  constructor() {
+
+  }
+  add_item(tel) {
+    this.students.push({ name: this.show_text(), tel: tel, id: 5 });
+    this.name = '';
+    this.tel = '';
+    let a = '';
+  }
+  show_text() {
+    return "ff";
+  }
+  demo() {
+
+  }
 
 }
