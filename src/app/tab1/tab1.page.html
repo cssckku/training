@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="success">
     <ion-title>
       Tab 1
     </ion-title>
@@ -8,6 +8,13 @@
 
 
 <ion-content [fullscreen]="true">
+  <div id="name">
+    <div class="title2" style="width: 200px;height: 100px; background-color: red;"></div>
+    <div class="title2" style="width: 100px;height: 100px;background-color: blue;"></div>
+  </div>
+  
+
+  <div class="title"></div>
   <ion-list>
     <ion-item>
       <ion-label position="floating">Floating Label</ion-label>
@@ -17,17 +24,20 @@
       <ion-label position="floating">Floating Label</ion-label>
       <ion-input [(ngModel)]="tel"></ion-input>
     </ion-item>
-    <ion-button expand="full" (click)="add_item(tel)" color="primary">Outline + Full</ion-button>
-
+    <ion-button color="success" expand="full" (click)="add_item(tel)" color="primary">Outline + Full</ion-button>
+<ion-button (click)="presentAlertConfirm()">click</ion-button>
     <ion-item *ngFor="let item of students">
-      <ion-label>Name {{item.name}} TEL : {{item.tel}}</ion-label>
+      <ion-label class="title">
+        <div>sadfasdf</div>
+        Name {{item.name}} TEL : {{item.tel}}
+      </ion-label>
     </ion-item>
     <h1>
       {{show_text()}}
     </h1>
   </ion-list>
-  <div>
-    dfgsdgsdf
+  <div style="font-size: 30px;color: cornflowerblue;">
+    สวัสดีครับ
   </div>
 
 </ion-content>
